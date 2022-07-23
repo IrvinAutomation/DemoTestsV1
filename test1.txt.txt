@@ -1,0 +1,5 @@
+This should be pushed to github repository
+Learning git and git hub is very exciting 
+This is going well
+When you initially create a file on your local file, it's not part of git until it is committed
+check git status by git status
