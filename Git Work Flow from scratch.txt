@@ -30,5 +30,6 @@ Git and GitHub workflow
    git push origin master
    
  Close remote repository to your local repo
+ -----------------------------------------
  git clone "URl of the project you want to clone"
  
