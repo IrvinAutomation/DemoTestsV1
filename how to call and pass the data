@@ -1,0 +1,6 @@
+         var TestDataGenerator = new TestDataGenerator();
+         String firstName = TestDataGenerator.TestNames(7);
+         String lastName = TestDataGenerator.TestNames(8);
+
+         BaseTest.userName = $"{firstName} {lastName}".ToString();
+         BaseTest.emailAddress = $"{firstName}.{lastName}@aIrvin.com".ToString();
