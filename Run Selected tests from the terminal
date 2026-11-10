@@ -1,0 +1,5 @@
+Run selected smoke test and a different browser
+PS C:\Git\ASEC.IdentityPlatform.Automation\tests\ASEC_Identity_Platform_Web_Tests> dotnet test ASEC_Identity_Platform_Web_Tests.csproj  dotnet test ASEC_Identity_Platform_Web_Tests.csproj --filter "TestCategory=Smoke" -- 'TestRunParameters.Parameter(name=\"browserName\", value=\"Firefox\")'
+
+Run only smoke tests from the terminal
+PS C:\Git\ASEC.IdentityPlatform.Automation\tests\ASEC_Identity_Platform_Web_Tests> dotnet test ASEC_Identity_Platform_Web_Tests.csproj 
