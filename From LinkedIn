@@ -1,0 +1,54 @@
+I interviewed at a company that asked me to find bugs in their app as a live test.
+
+I found a way to access any user's account in under 60 seconds.
+
+The interviewer went silent.
+
+Here's what happened:
+
+They gave me a staging URL: "You have 1 hour. Find whatever you can."
+
+I didn't touch the UI. I opened DevTools.
+
+Clicked "View Profile." Watched the API call:
+
+GET /api/users/1042
+
+Changed it to:
+
+GET /api/users/1043
+
+Someone else's full profile. Name. Email. Phone. Payment history. No token check. Classic IDOR.
+
+Then I checked password reset. The reset token was in the URL. Changed the user ID. It let me reset ANY user's password.
+
+Account takeover. 2 API calls. No tools. Just a browser.
+
+Total time: 47 seconds.
+
+The interviewer: "How did you think to try that?"
+
+Me: "I don't test if features work. I test if they can be abused."
+
+This is what separates a QA engineer from a button-clicker.
+
+Every API call, every URL parameter is a question:
+- "What happens if I change this?"
+- "What if I'm not supposed to be here?"
+- "What if I send this request twice?"
+
+Most testers ask: "Does it work?"
+Security testers ask: "Does it ONLY work the way it should?"
+
+One question finds features. The other finds vulnerabilities.
+
+They didn't just offer me the job. They asked me to audit their entire app first.
+
+My challenge to every QA engineer reading this:
+
+Open your app. Find any API call with a user ID. Change the number. See what happens.
+
+Comment SAFE if your app passes.
+Comment EXPOSED if it doesn't.
+
+Be honest. Replying to everyone.
