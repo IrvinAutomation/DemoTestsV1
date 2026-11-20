@@ -1,0 +1,4 @@
+  PS C:\IrvinProjects\IrvinPlaywright> powershell -ExecutionPolicy Bypass -File bin\Debug\net8.0\playwright.ps1 install
+
+C:\Git\ASEC.IdentityPlatform.Automation\tests\ASEC_Identity_Platform_Web_Tests\bin\Debug\net8.0\playwright.ps1 install chromium
+PS C:\Git\ASEC.IdentityPlatform.Automation\tests\ASEC_Identity_Platform_Web_Tests\bin\Debug\net8.0> powershell -ExecutionPolicy Bypass -File .\playwright.ps1 install firefox
