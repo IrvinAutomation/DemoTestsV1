@@ -1,0 +1,23 @@
+Cookie manager - HTTP Cookie Manager - brings the cookies from a previously executed endpoints/ screens
+
+
+Controllers
+First Select Non-Test Elements Then,
+HTTP(s) Test script Recorder - Select Target controller "Use Recording Controller" Then,
+Create a Thread then add,
+Recording Controller
+    |
+Logic Controller - Transaction controller
+    |
+Add Module controller if there is a script you want to reuse
+    |
+Then your listerners - View results Tree and Aggregate report
+
+
+
+Types of Controllers
+1. Interleave controller - One sample per iteration is executed top to bottom
+2.Runtime controller - Runtime controller controls the execution of its samplers/requests for the given time
+3.Random Controller - Random controller plays only one of it's children samples picking it randomly - similar to interleave, it just select one sampler randomly
+4.If Controller - will execute based on a certain condition
+5. Loop controller
