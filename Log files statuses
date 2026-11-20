@@ -1,0 +1,13 @@
+"Trace" – Most detailed logs.
+
+"Debug" – Used for debugging.
+
+"Information" – General app flow.
+
+"Warning" – Non-critical issues.
+
+"Error" – Errors that need attention.
+
+"Critical" – Severe errors.
+
+"None" – Disables logging.
