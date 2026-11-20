@@ -1,0 +1,70 @@
+Classes and objects
+
+Class - Construct that enables you to create your own custom types by grouping together variables of other types, methods and events
+	  - Class is a blueprint- defines the data and behavior of a type. If a class is not declared as static. client code can use it by creating objects or instances which are
+	    assigned to a variable.
+	  - Blueprint of what you are about to design for your program
+	  
+Object - Block of memory that has been allocated and configured according to the
+       - Program may create many objects of the same class
+	   - Objects are also called instances and they can be stored in either a named variable or in an array or collection
+
+Console.Write("Hello Irvin"); will write into the consolode
+Console.Read(); will print the console
+
+Program p = new Program(); - a label for the class program- this is a object
+
+Multiple classes - instance object or variable (Used interchangeably) are used to create a memory reference of Program class. and they are different each time you create a new object
+
+
+Custom types - Classes are Types , you can have custom type
+
+Pre-define types - many predefined types- int, String, bool, double
+
+Types Casting - Converting a type (int, String or custom class) from one type to another
+
+Types of conversion - Implicit conversion - No data loss
+					- Explicit conversion - Data loss may happen
+					- User - defined conversion - DOne via user code with helper classes
+var or implicitly-typed variable - Local variable is strongly typed just as if you had declared the type yourself, but the compiler determines the type
+
+working with mothos - Method is a code block that contains a series of statements. A program causes the statements to be execute by calling the method and specifying any required 
+					  method arguments
+					- In C# every executed instruction is performed in the context of a method
+Methods will contain - Access specifier, Modifier, return type, method name,
+
+Method overloading - Method with the same name but with different parameters
+
+The order in which statements are executed in a program is called the flow of control or flow of execution
+
+Using iteration statements we can look our code to the number of times specified, also subject to loop-termination criteria 
+
+types of loops. for loops, do, foreach, while
+
+Arrays[] helps us store multiple values of the SAME types
+
+Arrays[] can hold any number of data in it and you can also explicitly specify the size of the array
+
+Array[] can be of different dimensions as well
+
+int [] testCases = new int [] {101, 102, 103}
+string[] newNames = new string[] {""Name", "Surname", "Forename"}
+
+Collections - unlike Arrays, collections provides a more flexible way to work with groups of objects
+			- you can create your own object and create a collection of it
+
+Types of collection - ArrayList, Hashtable
+
+Enums - The enum keywork is used to declared an enumeration, a distinct type that consists of a set of named constants called the enumerator list
+
+Selenium
+
+The best example of interfaces in automation testing with selenium in IWebDriver interfaces
+
+IWebDriver driver = new ChromeDriver();
+
+SelectElement selectElement = new SelectElement(driver.FindElement(By.Id("dropdown")));
+selementElement.SelectByText("the option text here");
+
+
+
