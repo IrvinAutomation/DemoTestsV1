@@ -1,0 +1,30 @@
+Xpath
+//input[@id = 'value']
+//input[starts-with(@id, 'val')] for dynamically changing elements
+//input[contains(@id, 'val')] for dynamicallt changing elements that contails that key word
+//input[@id = 'value']/.. to navigate back to the parent OR
+//input[@id = 'value']/parent::div navigating to parent
+//*[contains(text(),  'value'] partial value
+//*[contains[text(),  'value']
+
+CSS
+input[id^ = 'value'] - starts with
+input[id$ = 'value'] - ends with
+
+//Assertions
+using(new AssertionScope())
+{
+• AssertionScope belongs to FluentAssertions. It is a general-purpose assertion 
+library that can be used alongside any test runner like xUnit, NUnit, or MSTest.
+
+}
+
+Assert.Mutilple()) =>
+{
+• Assert.Multiple belongs strictly to NUnit. It is a built-in feature of 
+the NUnit test framework and cannot be used if you are using xUnit or MSTest.
+})'
+
+//Paralle testing
+[Parallelizable(ParallelScope.Children)] - Runs the test under that [Test] only
+
