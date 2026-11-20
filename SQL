@@ -1,0 +1,72 @@
+SQL
+CREATE TABLE student(
+   student_id INT PRIMARY KEY,
+   name VARCHAR(20) NOT NULL,
+   major VARCHAR(20) UNIQUE,
+   teacher VARCHAR(20) DEFAULT 'undecided',
+   supervisor VARCHAR(20) FOREUGN KEY REFERENCES employee(emp_id) on DELETE SET NULL
+   );
+DESCRIBE "table name"; - This describe the table 
+DROP TABLE "table name"; - this deletes the table
+ALTER TABLE "table name" ADD "the column" - this should add the new column
+ALTER TABLE  'table name' DROP column "column name"; - this should delete the the column you specified
+
+INSERT INTO student VALUES(1, 'Jack', 'Biology'); 
+
+  INSERT INTO [SHDDS_QA].[dbo].[DeliveryDestination] (DeliveryTypeId,ClientId, Description, Value)
+  VALUES (1,2009, 'SharepointSecretExpiryDate', '2026-11-21');
+
+  DELETE FROM [SHDDS_QA].[dbo].[DeliveryDestination]
+  WHERE DeliveryDestinationId = 2347
+ 
+ORDER BY name DESC 
+LIMIT 2; 
+
+<> - NOT EQUAL TO
+< - LESS THAN
+> - GREATER THAN
+<= - LESS THAM OR EQUAL TO
+=> - GREATER OR EQUALS TO
+
+WHERE name IN( 'Biology', 'chemistrt') AND student_id >2;
+
+SELECT first_name AS forename, last_name AS surname
+FROM Employee;
+
+SELECT DISTINCT NAME
+FROM employee;
+
+SELECT COUNT(emp_id)
+FROM employee;     - this counts how many emp_id you have on your table
+
+SELECT COUNT(emp_id)
+FROM employee
+WHERE sex = 'F' AND DateOfBirth = '1970-01-01';    - count the number of Female employee born after 1970
+
+SELECT COUNT(sex),sex
+FROM Employee
+GROUP By sex;   - this should tell us how many females and how many males we have
+
+WIld card
+Select * FROM client
+WHERE client_name LIKE '%school%';
+
+% - any number of characters
+_ - one character
+
+find employee born in octover
+SELECT * from employee
+WHERE birth_date LIKE '____ - 10%';
+
+UNION
+SELECT employee_name
+From employee
+UNION
+SELECT branch_name
+FROM branch_name
+
+Join
+Select employee.emp_id, employee.first_name, branch_name
+FROM employee
+JOIN branch
+ON employee.emp_id = branch.manager_id
